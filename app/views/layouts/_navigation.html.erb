@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-
   <%= link_to "VEGABOND NICHOLAS", root_path, class: "navbar-brand", id: "logo" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -8,7 +7,15 @@
     <div class="navbar-nav">
       <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
       <%= link_to "About", about_path, class: 'nav-link'%>
-      <%= link_to "Articles", articles_path, class: 'nav-link'%>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Articles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to "View Articles", articles_path, class: 'dropdown-item'%>
+          <%= link_to "Create New Article", new_article_path, class: 'dropdown-item'%>
+        </div>
+      </li>  
     </div>
   </div>
 </nav>
