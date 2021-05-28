@@ -19,6 +19,9 @@
           <small>Created, <%=time_ago_in_words article.created_at %></small><br/>
           <small>Edited, <%= time_ago_in_words article.updated_at %></small>
         </div>
+        <div class="card-footer text-muted">
+          <small>By: <%= article.user.username if article.user %></small>
+        </div>
       </div>
     </div>
   

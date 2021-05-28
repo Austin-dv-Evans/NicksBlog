@@ -94,3 +94,14 @@ html, body {
 .all-articles-container {
   margin-bottom: 3rem;
 }
+
+.dropdown-menu {
+  background-color: #000000 !important;
+}
+
+.dropdown-item {
+  color: white !important;
+  &:hover {
+    background-color: #58055c !important;
+  }
+}
