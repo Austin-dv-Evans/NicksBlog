@@ -105,3 +105,15 @@ html, body {
     background-color: #58055c !important;
   }
 }
+
+.homepage__stats{
+  display: flex;
+  align-items: center;
+}
+
+.statItem {
+  color: white;
+  list-style: none;
+  font-size: 2rem;
+
+}
